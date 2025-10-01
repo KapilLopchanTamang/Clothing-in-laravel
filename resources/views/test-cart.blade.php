@@ -14,7 +14,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Product 1</h5>
-                            <p>$50.00</p>
+                            <p>Rs 6,650</p>
                             <button class="btn btn-primary add-to-cart" data-product-id="1">
                                 Add to Cart
                             </button>
@@ -25,7 +25,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Product 2</h5>
-                            <p>$120.00</p>
+                            <p>Rs 15,960</p>
                             <button class="btn btn-primary add-to-cart" data-product-id="2">
                                 Add to Cart
                             </button>
@@ -36,7 +36,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <h5>Product 3</h5>
-                            <p>$3500.00</p>
+                            <p>Rs 4,65,500</p>
                             <button class="btn btn-primary add-to-cart" data-product-id="3">
                                 Add to Cart
                             </button>

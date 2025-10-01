@@ -22,7 +22,7 @@
     <div class="offcanvas-footer p-3 border-top" id="mobile-cart-footer" style="display: none;">
         <div class="d-flex justify-content-between mb-3">
             <strong>Total:</strong>
-            <strong id="mobile-cart-total">$0.00</strong>
+            <strong id="mobile-cart-total">Rs 0.00</strong>
         </div>
         <div class="d-grid gap-2">
             <button class="btn btn-primary" onclick="window.location.href='/cart'">

@@ -259,7 +259,7 @@
                                                 <td>#12345</td>
                                                 <td>Dec 15, 2023</td>
                                                 <td>3 items</td>
-                                                <td>$149.99</td>
+                                                <td>Rs 19,999</td>
                                                 <td><span class="badge bg-success">Delivered</span></td>
                                                 <td>
                                                     <button class="btn btn-sm btn-outline-primary">View</button>
@@ -269,7 +269,7 @@
                                                 <td>#12344</td>
                                                 <td>Dec 10, 2023</td>
                                                 <td>2 items</td>
-                                                <td>$89.99</td>
+                                                <td>Rs 11,999</td>
                                                 <td><span class="badge bg-warning">Processing</span></td>
                                                 <td>
                                                     <button class="btn btn-sm btn-outline-primary">View</button>
@@ -279,7 +279,7 @@
                                                 <td>#12343</td>
                                                 <td>Dec 5, 2023</td>
                                                 <td>1 item</td>
-                                                <td>$49.99</td>
+                                                <td>Rs 6,499</td>
                                                 <td><span class="badge bg-info">Shipped</span></td>
                                                 <td>
                                                     <button class="btn btn-sm btn-outline-primary">Track</button>
@@ -307,7 +307,7 @@
                                             <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product">
                                             <div class="card-body">
                                                 <h6 class="card-title">Product Name</h6>
-                                                <p class="card-text text-muted">$99.99</p>
+                                                <p class="card-text text-muted">Rs 13,299</p>
                                                 <div class="d-flex gap-2">
                                                     <button class="btn btn-primary btn-sm flex-fill">Add to Cart</button>
                                                     <button class="btn btn-outline-danger btn-sm">
@@ -365,9 +365,9 @@
                                                     </div>
                                                 </div>
                                                 <p class="card-text small">
-                                                    456 Business Ave<br>
-                                                    New York, NY 10002<br>
-                                                    United States
+                                                    Thamel, Kathmandu 44600<br>
+                                                    Bagmati Province<br>
+                                                    Nepal
                                                 </p>
                                             </div>
                                         </div>
@@ -595,10 +595,10 @@
                                     <div class="form-group">
                                         <label for="currency" class="form-label">Currency</label>
                                         <select class="form-control" id="currency">
-                                            <option value="USD" selected>USD ($)</option>
+                                            <option value="NPR" selected>NPR (Rs)</option>
+                                            <option value="USD">USD ($)</option>
                                             <option value="EUR">EUR (€)</option>
                                             <option value="GBP">GBP (£)</option>
-                                            <option value="CAD">CAD (C$)</option>
                                         </select>
                                     </div>
                                 </div>
@@ -654,7 +654,7 @@
                                 <div class="stat-icon">
                                     <i class="fas fa-dollar-sign"></i>
                                 </div>
-                                <div class="stat-number">$2,450</div>
+                                <div class="stat-number">Rs 3,26,500</div>
                                 <div class="stat-label">Total Spent</div>
                             </div>
                             <div class="stat-card">
@@ -683,7 +683,7 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <div class="fw-bold">Order #12345 placed</div>
-                                        <small class="text-muted">2 hours ago • $89.99</small>
+                                        <small class="text-muted">2 hours ago • Rs 11,999</small>
                                     </div>
                                 </div>
                                 <div class="activity-item d-flex align-items-center mb-3">
@@ -692,7 +692,7 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <div class="fw-bold">Order #12344 delivered</div>
-                                        <small class="text-muted">1 day ago • $156.00</small>
+                                        <small class="text-muted">1 day ago • Rs 20,800</small>
                                     </div>
                                 </div>
                                 <div class="activity-item d-flex align-items-center mb-3">

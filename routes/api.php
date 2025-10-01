@@ -108,7 +108,7 @@ Route::get('/notifications', function () {
 // User preferences
 Route::get('/preferences', function () {
     return response()->json([
-        'currency' => 'USD',
+        'currency' => 'NPR',
         'language' => 'en',
         'notifications' => [
             'email' => true,
@@ -120,7 +120,7 @@ Route::get('/preferences', function () {
 
 Route::post('/preferences', function (Request $request) {
     $request->validate([
-        'currency' => 'string|in:USD,EUR,GBP',
+        'currency' => 'string|in:NPR,USD,EUR,GBP',
         'language' => 'string|in:en,es,fr,de',
         'notifications' => 'array'
     ]);

@@ -69,24 +69,24 @@
                     <div class="card-body">
                         <div class="summary-row">
                             <span>Subtotal:</span>
-                            <span id="subtotal">$0.00</span>
+                            <span id="subtotal">Rs 0.00</span>
                         </div>
                         <div class="summary-row">
                             <span>Shipping:</span>
-                            <span id="shipping">$0.00</span>
+                            <span id="shipping">Rs 0.00</span>
                         </div>
                         <div class="summary-row">
                             <span>Tax:</span>
-                            <span id="tax">$0.00</span>
+                            <span id="tax">Rs 0.00</span>
                         </div>
                         <div class="summary-row" id="discount-row" style="display: none;">
                             <span>Discount:</span>
-                            <span id="discount" class="text-success">-$0.00</span>
+                            <span id="discount" class="text-success">-Rs 0.00</span>
                         </div>
                         <hr>
                         <div class="summary-row">
                             <strong>Total:</strong>
-                            <strong class="summary-total" id="total">$0.00</strong>
+                            <strong class="summary-total" id="total">Rs 0.00</strong>
                         </div>
                         <button class="btn btn-primary checkout-btn" id="checkout-btn" disabled>
                             <i class="fas fa-credit-card me-2"></i>Proceed to Checkout

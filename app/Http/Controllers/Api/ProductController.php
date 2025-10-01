@@ -270,17 +270,17 @@ class ProductController extends Controller
         return [
             [
                 'id' => 1,
-                'name' => 'adidas X Pop Polo Shirt',
-                'description' => 'Comfortable cotton polo shirt with modern design and breathable fabric. Perfect for casual wear and sports activities.',
-                'price' => 50.00,
-                'original_price' => 65.00,
+                'name' => 'Nepal Handwoven Cotton Shirt',
+                'description' => 'Traditional Nepali handwoven cotton shirt with modern design and breathable fabric. Perfect for casual wear and cultural occasions.',
+                'price' => 6650.00,
+                'original_price' => 8645.00,
                 'image' => 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 'images' => [
                     'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                     'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
                 ],
                 'category' => 'men',
-                'brand' => 'Adidas',
+                'brand' => 'Nepal Craft',
                 'rating' => 4.5,
                 'reviews' => 24,
                 'sizes' => ['S', 'M', 'L', 'XL', 'XXL'],

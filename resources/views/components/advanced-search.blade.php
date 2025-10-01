@@ -61,8 +61,8 @@
                             <div class="mt-2">
                                 <input type="range" class="form-range" id="price-range" min="0" max="1000" value="500" oninput="updatePriceRange(this.value)">
                                 <div class="d-flex justify-content-between">
-                                    <small class="text-muted">$0</small>
-                                    <small class="text-muted">$1000+</small>
+                                    <small class="text-muted">Rs 0</small>
+                                    <small class="text-muted">Rs 1,33,000+</small>
                                 </div>
                             </div>
                         </div>

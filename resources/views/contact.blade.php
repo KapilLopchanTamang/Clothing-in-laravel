@@ -73,8 +73,8 @@
                                         <div>
                                             <h6 class="mb-1">Address</h6>
                                             <p class="text-muted mb-0">
-                                                123 Fashion Street<br>
-                                                Style City, SC 12345
+                                                Thamel, Kathmandu 44600<br>
+                                                Bagmati Province, Nepal
                                             </p>
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@
                                         </div>
                                         <div>
                                             <h6 class="mb-1">Phone</h6>
-                                            <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                                            <p class="text-muted mb-0">+977-1-4412345</p>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                                         </div>
                                         <div>
                                             <h6 class="mb-1">Email</h6>
-                                            <p class="text-muted mb-0">info@mixtas.com</p>
+                                            <p class="text-muted mb-0">info@nepalclothing.com</p>
                                         </div>
                                     </div>
                                 </div>

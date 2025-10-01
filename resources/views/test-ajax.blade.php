@@ -276,7 +276,7 @@ function performSearch(query, suggestionsContainer, resultsContainer) {
                             <img src="${product.image}" alt="${product.name}" class="me-3" style="width: 50px; height: 50px; object-fit: cover;">
                             <div>
                                 <div class="fw-bold">${product.name}</div>
-                                <div class="text-muted small">$${product.price}</div>
+                                <div class="text-muted small">Rs ${product.price}</div>
                             </div>
                         </div>
                     </div>
@@ -383,7 +383,7 @@ function loadCart() {
                         <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 40px; height: 40px; object-fit: cover;">
                         <div class="flex-grow-1">
                             <div class="fw-bold">${item.name}</div>
-                            <small class="text-muted">Qty: ${item.quantity} | $${item.price}</small>
+                            <small class="text-muted">Qty: ${item.quantity} | Rs ${item.price}</small>
                         </div>
                     </div>
                 `).join('');
@@ -445,7 +445,7 @@ function loadWishlist() {
                         <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 40px; height: 40px; object-fit: cover;">
                         <div class="flex-grow-1">
                             <div class="fw-bold">${item.name}</div>
-                            <small class="text-muted">$${item.price}</small>
+                            <small class="text-muted">Rs ${item.price}</small>
                         </div>
                     </div>
                 `).join('');
@@ -495,7 +495,7 @@ function showQuickViewModal(product) {
                 </div>
                 <div class="col-md-6">
                     <h3>${product.name}</h3>
-                    <div class="price h4 text-primary">$${product.price}</div>
+                    <div class="price h4 text-primary">Rs ${product.price}</div>
                     <p class="text-muted">${product.description}</p>
                     <div class="mt-3">
                         <button class="btn btn-primary add-to-cart" data-product-id="${product.id}">

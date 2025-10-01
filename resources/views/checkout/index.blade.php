@@ -215,20 +215,20 @@
                             <hr>
                             <div class="d-flex justify-content-between mb-2">
                                 <span>Subtotal:</span>
-                                <span id="order-subtotal">$0.00</span>
+                                <span id="order-subtotal">Rs 0.00</span>
                             </div>
                             <div class="d-flex justify-content-between mb-2">
                                 <span>Shipping:</span>
-                                <span id="order-shipping">$0.00</span>
+                                <span id="order-shipping">Rs 0.00</span>
                             </div>
                             <div class="d-flex justify-content-between mb-2">
                                 <span>Tax:</span>
-                                <span id="order-tax">$0.00</span>
+                                <span id="order-tax">Rs 0.00</span>
                             </div>
                             <hr>
                             <div class="d-flex justify-content-between mb-3">
                                 <strong>Total:</strong>
-                                <strong id="order-total">$0.00</strong>
+                                <strong id="order-total">Rs 0.00</strong>
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mb-3">
                                 <i class="fas fa-lock me-2"></i>Complete Order

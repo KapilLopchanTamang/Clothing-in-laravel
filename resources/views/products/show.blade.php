@@ -250,7 +250,7 @@
                             <div class="tab-pane fade" id="shipping">
                                 <h5>Shipping Information</h5>
                                 <ul>
-                                    <li>Free shipping on orders over $100</li>
+                                    <li>Free shipping on orders over Rs 13,300</li>
                                     <li>Standard shipping: 3-5 business days</li>
                                     <li>Express shipping: 1-2 business days</li>
                                     <li>International shipping available</li>
