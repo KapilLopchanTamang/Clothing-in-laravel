@@ -53,10 +53,10 @@
 
                     <!-- Price -->
                     <div class="price mb-4">
-                        <span class="h3 text-primary fw-bold">${{ number_format($product['price'], 2) }}</span>
+                        <span class="h3 text-primary fw-bold">Rs {{ number_format($product['price'], 2) }}</span>
                         @if(isset($product['original_price']) && $product['original_price'] > $product['price'])
-                            <span class="text-muted text-decoration-line-through ms-2">${{ number_format($product['original_price'], 2) }}</span>
-                            <span class="badge bg-danger ms-2">Save ${{ number_format($product['original_price'] - $product['price'], 2) }}</span>
+                            <span class="text-muted text-decoration-line-through ms-2">Rs {{ number_format($product['original_price'], 2) }}</span>
+                            <span class="badge bg-danger ms-2">Save Rs {{ number_format($product['original_price'] - $product['price'], 2) }}</span>
                         @endif
                     </div>
 
@@ -281,7 +281,7 @@
                             <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Related Product">
                             <div class="card-body">
                                 <h6 class="card-title">Related Product {{ $i }}</h6>
-                                <p class="card-text text-muted">${{ rand(20, 100) }}.99</p>
+                                <p class="card-text text-muted">Rs {{ rand(2660, 13300) }}</p>
                                 <button class="btn btn-primary btn-sm w-100">Add to Cart</button>
                             </div>
                         </div>

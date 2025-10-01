@@ -91,9 +91,9 @@
                         <!-- Price -->
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div>
-                                <span class="h5 text-primary fw-bold mb-0">${{ number_format($product['price'] ?? 0, 2) }}</span>
+                                <span class="h5 text-primary fw-bold mb-0">Rs {{ number_format($product['price'] ?? 0, 2) }}</span>
                                 @if(isset($product['original_price']) && $product['original_price'] > $product['price'])
-                                    <small class="text-muted text-decoration-line-through ms-2">${{ number_format($product['original_price'], 2) }}</small>
+                                    <small class="text-muted text-decoration-line-through ms-2">Rs {{ number_format($product['original_price'], 2) }}</small>
                                 @endif
                             </div>
                         </div>
@@ -109,12 +109,12 @@
             <!-- Sample Products for Demo -->
             @php
             $sampleProducts = [
-                ['id' => 1, 'name' => 'adidas X Pop Polo Shirt', 'price' => 50.00, 'category' => 'men', 'rating' => 5, 'reviews' => 24, 'badge' => 'New'],
-                ['id' => 2, 'name' => 'Nike Air Max 270', 'price' => 120.00, 'category' => 'shoes', 'rating' => 4, 'reviews' => 156, 'badge' => ''],
-                ['id' => 3, 'name' => 'Chanel Classic Handbag', 'price' => 3500.00, 'category' => 'bags', 'rating' => 5, 'reviews' => 89, 'badge' => ''],
-                ['id' => 4, 'name' => 'Zara Summer Dress', 'price' => 45.00, 'category' => 'women', 'rating' => 4, 'reviews' => 67, 'badge' => 'Sale', 'original_price' => 65.00],
-                ['id' => 5, 'name' => 'Ray-Ban Aviator Sunglasses', 'price' => 180.00, 'category' => 'accessories', 'rating' => 5, 'reviews' => 203, 'badge' => ''],
-                ['id' => 6, 'name' => 'Levi\'s 501 Jeans', 'price' => 89.00, 'category' => 'men', 'rating' => 4, 'reviews' => 134, 'badge' => ''],
+                ['id' => 1, 'name' => 'Nepal Handwoven Cotton Shirt', 'price' => 6650.00, 'category' => 'men', 'rating' => 5, 'reviews' => 24, 'badge' => 'New'],
+                ['id' => 2, 'name' => 'Nepal Traditional Leather Sandals', 'price' => 15960.00, 'category' => 'shoes', 'rating' => 4, 'reviews' => 156, 'badge' => ''],
+                ['id' => 3, 'name' => 'Nepal Handwoven Dhaka Bag', 'price' => 465500.00, 'category' => 'bags', 'rating' => 5, 'reviews' => 89, 'badge' => ''],
+                ['id' => 4, 'name' => 'Nepal Traditional Kurta Dress', 'price' => 5985.00, 'category' => 'women', 'rating' => 4, 'reviews' => 67, 'badge' => 'Sale', 'original_price' => 8645.00],
+                ['id' => 5, 'name' => 'Nepal Handcrafted Wooden Sunglasses', 'price' => 23940.00, 'category' => 'accessories', 'rating' => 5, 'reviews' => 203, 'badge' => ''],
+                ['id' => 6, 'name' => 'Nepal Handwoven Cotton Pants', 'price' => 11837.00, 'category' => 'men', 'rating' => 4, 'reviews' => 134, 'badge' => ''],
             ];
             @endphp
             
@@ -162,9 +162,9 @@
                         
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div>
-                                <span class="h5 text-primary fw-bold mb-0">${{ number_format($product['price'], 2) }}</span>
+                                <span class="h5 text-primary fw-bold mb-0">Rs {{ number_format($product['price'], 2) }}</span>
                                 @if(isset($product['original_price']))
-                                    <small class="text-muted text-decoration-line-through ms-2">${{ number_format($product['original_price'], 2) }}</small>
+                                    <small class="text-muted text-decoration-line-through ms-2">Rs {{ number_format($product['original_price'], 2) }}</small>
                                 @endif
                             </div>
                         </div>

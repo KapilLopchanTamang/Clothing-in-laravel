@@ -107,7 +107,7 @@ class AjaxEnhancements {
                     <img src="${product.image}" alt="${product.name}" class="me-3" style="width: 50px; height: 50px; object-fit: cover;">
                     <div>
                         <div class="fw-bold">${product.name}</div>
-                        <div class="text-muted small">$${product.price}</div>
+                        <div class="text-muted small">Rs ${product.price}</div>
                     </div>
                 </div>
             </div>
@@ -399,7 +399,7 @@ class AjaxEnhancements {
                     </div>
                     <div class="col-md-6">
                         <h3>${product.name}</h3>
-                        <div class="price h4 text-primary">$${product.price}</div>
+                        <div class="price h4 text-primary">Rs ${product.price}</div>
                         <p class="text-muted">${product.description}</p>
                         <div class="mt-3">
                             <button class="btn btn-primary add-to-cart" data-product-id="${product.id}">
@@ -502,7 +502,7 @@ class AjaxEnhancements {
                            min="1" data-product-id="${item.id}" style="width: 60px;">
                 </div>
                 <div class="me-3">
-                    <span class="fw-bold">$${(item.price * item.quantity).toFixed(2)}</span>
+                    <span class="fw-bold">Rs ${(item.price * item.quantity).toFixed(2)}</span>
                 </div>
                 <button class="btn btn-link text-danger remove-item" data-product-id="${item.id}">
                     <i class="fas fa-trash"></i>

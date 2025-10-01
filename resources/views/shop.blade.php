@@ -123,9 +123,9 @@
                         </div>
                         
                         <div class="product-price">
-                            <span class="current-price">${{ number_format($product['price'], 2) }}</span>
+                            <span class="current-price">Rs {{ number_format($product['price'], 2) }}</span>
                             @if(isset($product['original_price']) && $product['original_price'] > $product['price'])
-                                <span class="original-price">${{ number_format($product['original_price'], 2) }}</span>
+                                <span class="original-price">Rs {{ number_format($product['original_price'], 2) }}</span>
                             @endif
                         </div>
                         
