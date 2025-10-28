@@ -3,13 +3,13 @@
 @section('title', 'Shopping Cart - Mixtas')
 
 @section('content')
-<!-- Page Header -->
-<section class="py-4" style="background: var(--gradient-bg);">
+<!-- Page Header - Minimalistic -->
+<section class="py-5" style="background: white; border-bottom: 1px solid var(--border-color);">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="display-6 fw-bold text-white mb-2">Shopping Cart</h1>
-                <p class="text-white-50">Review your items before checkout</p>
+            <div class="col-12">
+                <h1 class="h2 fw-bold mb-2" style="color: var(--primary-color);">Shopping Cart</h1>
+                <p class="text-muted mb-0">Review your items before checkout</p>
             </div>
         </div>
     </div>
@@ -107,25 +107,24 @@
 
 @push('styles')
 <style>
-/* Cart Page Enhancements */
+/* Cart Page - Minimalistic */
 .cart-container {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: white;
     min-height: 100vh;
 }
 
 .cart-header {
-    background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
-    color: white;
-    border-radius: 15px;
-    padding: 2rem;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
 }
 
 .cart-card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     overflow: hidden;
     background: white;
 }
@@ -246,41 +245,38 @@
 }
 
 .coupon-card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     background: white;
     margin-top: 1.5rem;
 }
 
 .coupon-input {
-    border-radius: 25px;
-    border: 2px solid #e9ecef;
-    padding: 0.75rem 1.5rem;
-    transition: all 0.3s ease;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    padding: 0.625rem 1rem;
+    transition: all 0.2s ease;
 }
 
 .coupon-input:focus {
-    border-color: #4A90E2;
-    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .coupon-btn {
-    border-radius: 25px;
-    padding: 0.75rem 2rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    border-radius: 6px;
+    padding: 0.625rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .coupon-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
 }
 
 .order-summary-card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     background: white;
     position: sticky;
     top: 20px;
@@ -289,11 +285,11 @@
 }
 
 .order-summary-header {
-    background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
-    color: white;
-    border-radius: 15px 15px 0 0;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-radius: 8px 8px 0 0;
     padding: 1.5rem;
-    border: none;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .summary-row {
@@ -313,78 +309,55 @@
 
 .summary-total {
     font-size: 1.25rem;
-    font-weight: 700;
-    color: #4A90E2;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .checkout-btn {
     width: 100%;
-    border-radius: 25px;
-    padding: 1rem 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.checkout-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-}
-
-.checkout-btn:hover::before {
-    left: 100%;
+    border-radius: 6px;
+    padding: 0.875rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .checkout-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+    transform: translateY(-1px);
 }
 
 .empty-cart {
     text-align: center;
     padding: 4rem 2rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    background: var(--bg-light);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
 }
 
 .empty-cart i {
-    font-size: 4rem;
-    color: #6c757d;
+    font-size: 3rem;
+    color: var(--text-light);
     margin-bottom: 1.5rem;
 }
 
 .empty-cart h4 {
-    color: #2c3e50;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .empty-cart p {
-    color: #6c757d;
+    color: var(--text-light);
     margin-bottom: 2rem;
 }
 
 .continue-shopping-btn {
-    border-radius: 25px;
-    padding: 1rem 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .continue-shopping-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
 }
 
 /* Responsive Design */

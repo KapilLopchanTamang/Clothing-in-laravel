@@ -21,102 +21,219 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS - Minimalistic Design -->
     <style>
         :root {
-            --primary-blue: #4A90E2;
-            --primary-teal: #50E3C2;
-            --gradient-bg: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
+            --primary-color: #111827;
+            --secondary-color: #6b7280;
+            --accent-color: #3b82f6;
+            --border-color: #e5e7eb;
+            --bg-light: #f9fafb;
+            --text-dark: #111827;
+            --text-light: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
+            color: var(--text-dark);
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        .hero-gradient {
-            background: var(--gradient-bg);
-            min-height: 60vh;
+        /* Minimalistic Navbar */
+        .navbar {
+            background: white !important;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.75rem 0;
+            transition: all 0.3s ease;
         }
 
         .navbar-brand {
-            font-weight: 700;
-            font-size: 1.8rem;
-            color: var(--primary-blue) !important;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--primary-color) !important;
+            letter-spacing: -0.02em;
         }
 
         .nav-link {
-            font-weight: 500;
-            color: #333 !important;
-            transition: color 0.3s ease;
+            font-weight: 400;
+            font-size: 0.95rem;
+            color: var(--text-dark) !important;
+            padding: 0.5rem 1rem !important;
+            transition: color 0.2s ease;
         }
 
         .nav-link:hover {
-            color: var(--primary-blue) !important;
+            color: var(--accent-color) !important;
         }
 
         .user-icon {
-            color: #666;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            transition: color 0.2s ease;
         }
 
         .user-icon:hover {
-            color: var(--primary-blue);
+            color: var(--accent-color);
         }
 
         .cart-badge {
             position: absolute;
-            top: -8px;
-            right: -8px;
-            background: #ff4757;
+            top: -5px;
+            right: -5px;
+            background: var(--accent-color);
             color: white;
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            font-size: 0.7rem;
+            width: 18px;
+            height: 18px;
+            font-size: 0.65rem;
+            font-weight: 600;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
+        /* Minimalistic Footer */
         .footer {
-            background-color: #2c3e50;
-            color: white;
+            background-color: var(--primary-color);
+            color: #9ca3af;
+            padding: 3rem 0 2rem;
+            border-top: 1px solid #374151;
         }
 
         .footer a {
-            color: #bdc3c7;
+            color: #9ca3af;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.2s ease;
+            font-size: 0.9rem;
         }
 
         .footer a:hover {
             color: white;
         }
 
-        .btn-primary {
-            background: var(--gradient-bg);
-            border: none;
-            border-radius: 25px;
-            padding: 10px 25px;
+        .footer h5, .footer h6 {
+            color: white;
             font-weight: 500;
-            transition: transform 0.3s ease;
+            font-size: 1rem;
+        }
+
+        /* Minimalistic Buttons */
+        .btn-primary {
+            background: var(--primary-color);
+            border: none;
+            border-radius: 6px;
+            padding: 0.625rem 1.25rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            color: white;
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            background: var(--gradient-bg);
+            background: #1f2937;
+            transform: translateY(-1px);
         }
 
+        .btn-outline-primary {
+            border: 1px solid var(--border-color);
+            color: var(--text-dark);
+            background: transparent;
+            border-radius: 6px;
+            padding: 0.625rem 1.25rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--bg-light);
+            border-color: var(--text-dark);
+            color: var(--text-dark);
+        }
+
+        /* Minimalistic Cards */
         .card {
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: none;
+            transition: all 0.2s ease;
+            background: white;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        /* Form Elements */
+        .form-control, .form-select {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.625rem 1rem;
+            font-size: 0.95rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                padding: 1rem 0;
+                border-top: 1px solid var(--border-color);
+                margin-top: 0.75rem;
+            }
+
+            .navbar-nav {
+                gap: 0.5rem;
+            }
+
+            .nav-link {
+                padding: 0.75rem 0 !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 1.25rem;
+            }
+
+            body {
+                font-size: 15px;
+            }
+        }
+
+        /* Utility Classes */
+        .text-muted {
+            color: var(--text-light) !important;
+        }
+
+        .border-light {
+            border-color: var(--border-color) !important;
+        }
+
+        .bg-light {
+            background-color: var(--bg-light) !important;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Remove excessive animations */
+        * {
+            animation-duration: 0.3s !important;
         }
     </style>
 

@@ -3,13 +3,13 @@
 @section('title', 'Checkout - Mixtas')
 
 @section('content')
-<!-- Page Header -->
-<section class="py-4" style="background: var(--gradient-bg);">
+<!-- Page Header - Minimalistic -->
+<section class="py-5" style="background: white; border-bottom: 1px solid var(--border-color);">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="display-6 fw-bold text-white mb-2">Checkout</h1>
-                <p class="text-white-50">Complete your purchase securely</p>
+            <div class="col-12">
+                <h1 class="h2 fw-bold mb-2" style="color: var(--primary-color);">Checkout</h1>
+                <p class="text-muted mb-0">Complete your purchase securely</p>
             </div>
         </div>
     </div>
@@ -250,10 +250,10 @@
 
 @push('styles')
 <style>
-/* Checkout Page Enhancements */
+/* Checkout Page - Minimalistic */
 .checkout-container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: white;
 }
 
 .sticky-summary {
@@ -289,15 +289,13 @@
     margin-bottom: 1rem;
     padding: 1rem;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-color);
 }
 
 .order-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .order-item:last-child {
@@ -330,8 +328,8 @@
 }
 
 .order-item-price {
-    font-weight: bold;
-    color: #4A90E2;
+    font-weight: 600;
+    color: var(--primary-color);
     font-size: 1.1rem;
 }
 
@@ -344,9 +342,8 @@
 }
 
 .form-control:focus, .form-select:focus {
-    border-color: #4A90E2;
-    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
-    transform: translateY(-1px);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .form-label {
@@ -357,59 +354,50 @@
 
 /* Card Enhancements */
 .card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 35px rgba(0,0,0,0.12);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.2s ease;
 }
 
 .card-header {
-    background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
-    color: white;
-    border-radius: 15px 15px 0 0 !important;
-    border: none;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-radius: 8px 8px 0 0 !important;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .card-header h5 {
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Button Enhancements */
 .btn {
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
+    background: var(--primary-color);
     border: none;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #357abd 0%, #3dd4b0 100%);
+    background: #1f2937;
 }
 
 /* Progress Indicator */
 .checkout-progress {
-    background: white;
-    border-radius: 15px;
+    background: var(--bg-light);
+    border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
 }
 
 .progress-step {
@@ -423,7 +411,7 @@
 }
 
 .progress-step.active .step-number {
-    background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
+    background: var(--primary-color);
     color: white;
 }
 
@@ -510,7 +498,7 @@ html {
 .form-select:focus,
 .btn:focus {
     outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 </style>
 @endpush
